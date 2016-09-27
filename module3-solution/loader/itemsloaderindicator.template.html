@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-md-4 col-sm-6 col-xs-12 square" ng-repeat="item in foundItems">
+    <b>Name: </b>{{ item.name }} <br>
+    <b>Short Name:</b> {{item.short_name}} <br>
+    <p>{{ item.description }}</p>
+    <button class="btn btn-danger" ng-click="onRemove({index: $index})">Don't want this one!</button>
+  </div>
+</div>
