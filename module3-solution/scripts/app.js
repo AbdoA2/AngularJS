@@ -64,7 +64,7 @@ function foundItems() {
   var ddo = {
     templateUrl: 'loader/itemsloaderindicator.template.html',
     scope: {
-      foundItems: "=foundItems",
+      foundItems: "<foundItems",
       onRemove: "&onRemove"
     },
     restrict: 'E'
