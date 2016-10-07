@@ -24,7 +24,7 @@ function MenuDataService($http, $q) {
     return $http({url: 'https://davids-restaurant.herokuapp.com/menu_items.json?category=' + categoryShortName}).then(function(response){
       var deferred = $q.defer();
       if (response.data) {
-        deferred.resolve(response.data.menu_items);
+        deferred.resolve({data: response.data.menu_items, category: response.data.category.name});
       }
       else {
         deferred.reject({error: 404});

@@ -3,11 +3,11 @@
 angular.module('MenuApp')
 .controller('ItemsController', ItemsController);
 
-ItemsController.$inject = ['items', '$stateParams'];
-function ItemsController(items, $stateParams){
+ItemsController.$inject = ['items'];
+function ItemsController(items){
   var ctrl = this;
-  ctrl.items = items;
-  ctrl.categoryShortName = $stateParams.categoryShortName;
+  ctrl.items = items.data;
+  ctrl.categoryName = items.category;
 }
 
 })();
