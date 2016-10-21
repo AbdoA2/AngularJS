@@ -31,7 +31,7 @@ function SignUpController(MenuService, MyInfoService, $state) {
 
   $ctrl.setInfo = function(){
     MyInfoService.setInfo($ctrl.info);
-    $state.go('public.myinfo');
+    $ctrl.saved = true;
   }
 }
 

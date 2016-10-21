@@ -66,6 +66,9 @@
           <button type="submit" class="btn btn-primary" ng-click="signupCtrl.setInfo()" ng-disabled="signupForm.$invalid || !signupCtrl.validDish">Submit</button>
         </div>
       </div>
+      <div ng-if="signupCtrl.saved">
+        <p>Your information has been saved.</p>
+      </div>
     </fieldset>
   </form>
 </div>
