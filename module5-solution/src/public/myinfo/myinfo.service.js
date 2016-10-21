@@ -8,7 +8,7 @@ angular.module('public')
 MyInfoService.$inject = [];
 function MyInfoService() {
   var service = this;
-  service.info = {firstName: "Abdelrahman", lastName: "Abbas", email:"abdelrahman_abbas@outlook.com", phone:"987-789-0987", short_name:"A1"};
+  service.info = null;
 
   service.setInfo = function(info){
     service.info = info;
